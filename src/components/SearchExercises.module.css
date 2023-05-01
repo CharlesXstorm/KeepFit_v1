@@ -1,0 +1,12 @@
+.search:hover {
+  color: #ff2625;
+}
+::-webkit-scrollbar {
+  background: transparent;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border: none;
+  outline: none;
+}

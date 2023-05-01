@@ -1,0 +1,9 @@
+.link {
+  text-decoration: none;
+  border-top: 3px solid #ff1212;
+  margin-bottom: 25px;
+}
+.link:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
