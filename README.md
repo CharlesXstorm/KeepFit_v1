@@ -1,5 +1,7 @@
 #Fitness App
 
+click on image to visit 🌐
+
 <a href="https://keepfitapp.netlify.app" target="_blank"><img width="550" alt="keepfitapp" src="https://user-images.githubusercontent.com/26228761/233829289-7e13b93e-e866-4353-82f8-cc4cbbb80a65.png"></a>
 
 <p>This app was created using React and Express.</p>
