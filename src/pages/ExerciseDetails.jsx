@@ -18,7 +18,7 @@ function ExerciseDetails() {
     const fetch = async () => {
       // const res = await axios.get(`http://127.0.0.1:5000/exercise/${id}`);
       const res = await axios.get(
-        `https://exerciseapi-production.up.railway.app/${id}`
+        `https://exerciseapi-production.up.railway.app/exercise/${id}`
       );
       setExerciseDetail(res.data.data);
 
