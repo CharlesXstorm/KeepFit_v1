@@ -34,7 +34,7 @@ const SearchExercises = ({
     const fetch = async () => {
       try {
         const res = await axios.get(
-          "https://exerciseapi-production.up.railway.app/exercise/bodyParts"
+          "https://xstormexercise.cyclic.app/exercise/bodyParts"
         );
         setBodyParts(res.data.data);
       } catch (err) {
@@ -52,7 +52,7 @@ const SearchExercises = ({
     if (search) {
       try {
         const res = await axios.get(
-          "https://exerciseapi-production.up.railway.app/exercise"
+          "https://xstormexercise.cyclic.app/exercise"
         );
         const exercise = res.data.data.filter(
           (el) =>

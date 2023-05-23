@@ -15,7 +15,7 @@ function Home() {
       try {
         // const exerciseItem = await axios.get("http://127.0.0.1:5000/exercise");
         const exerciseItem = await axios.get(
-          "https://exerciseapi-production.up.railway.app/exercise"
+          "https://xstormexercise.cyclic.app/exercise"
         );
         setExercises(exerciseItem.data.data);
       } catch (err) {
@@ -25,13 +25,14 @@ function Home() {
     if (bodyPart === "all") {
       fetch();
     } else {
-      fetchData(
-        "https://exerciseapi-production.up.railway.app/exercise",
-        ""
-      ).then((res) => {
-        const bodyPartData = res.data.filter((el) => el.bodyPart === bodyPart);
-        setExercises(bodyPartData);
-      });
+      fetchData("https://xstormexercise.cyclic.app/exercise", "").then(
+        (res) => {
+          const bodyPartData = res.data.filter(
+            (el) => el.bodyPart === bodyPart
+          );
+          setExercises(bodyPartData);
+        }
+      );
     }
   }, [bodyPart]);
 

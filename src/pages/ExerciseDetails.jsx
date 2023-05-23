@@ -18,7 +18,7 @@ function ExerciseDetails() {
     const fetch = async () => {
       // const res = await axios.get(`http://127.0.0.1:5000/exercise/${id}`);
       const res = await axios.get(
-        `https://exerciseapi-production.up.railway.app/exercise/${id}`
+        `https://xstormexercise.cyclic.app/exercise/${id}`
       );
       setExerciseDetail(res.data.data);
 
@@ -29,12 +29,12 @@ function ExerciseDetails() {
       setExerciseVideos(videoRes.data.contents);
 
       const targetRes = await axios.get(
-        `https://exerciseapi-production.up.railway.app/exercise/target/${res.data.data.target}`
+        `https://xstormexercise.cyclic.app/exercise/target/${res.data.data.target}`
       );
       setTargetMuscleExercises(targetRes.data.data);
 
       const equipmentRes = await axios.get(
-        `https://exerciseapi-production.up.railway.app/exercise/equipment/${res.data.data.equipment}`
+        `https://xstormexercise.cyclic.app/exercise/equipment/${res.data.data.equipment}`
       );
       setEquipmentExercises(equipmentRes.data.data);
     };
